@@ -1,0 +1,361 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  cursor: pointer;
+  text-decoration: none;
+  outline-style: none;
+}
+
+.clearfix:after,
+.cistern:after {
+  display: table;
+  clear: both;
+  content: ' ';
+}
+
+a,
+i {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* h1 {
+  font-size: 46px;
+} */
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+body {
+  font-family: ebg-font-regular, Arial;
+  font-size: 16px;
+  color: #231815;
+  background: #fff;
+}
+
+.LANG-cn body {
+  font-family: Microsoft YaHei, Arial;
+}
+
+body .ebg-font-light {
+  font-family: ebg-font-light, Arial;
+}
+
+body .ebg-font-regular {
+  font-family: ebg-font-regular, Arial;
+}
+
+body .ebg-font-bold {
+  font-family: ebg-font-bold, Arial;
+  font-weight: normal;
+}
+
+.LANG-cn body .ebg-font-light,
+.LANG-cn body .ebg-font-regular,
+.LANG-cn body .ebg-font-bold {
+  font-family: Microsoft YaHei, Arial;
+}
+
+.LANG-cn body .ebg-font-bold {
+  font-weight: bold;
+}
+
+.cistern {
+  max-width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.cistern .h2-title {
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+/* .lazyload {
+  position: relative;
+} */
+
+.lazyload img {
+  /* position: absolute; */
+  /* display: block; */
+  width: 100%;
+  /* min-height: 100%; */
+}
+
+/* .lazyload:after {
+  padding-top: 56.24%;
+  content: "";
+  width: 100%;
+  display: block;
+} */
+
+/* btn */
+body .ebg-btn-box .ebg-btn-bg-red-l,
+body .ebg-btn-box-block .ebg-btn-bg-red-l {
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #c7000b;
+  color: #c7000b;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #c7000b;
+  color: #fff;
+  margin-top: 20px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+body .ebg-btn-box,
+body .ebg-btn-box-block {
+  /* font-size: 0; */
+  line-height: 1;
+  padding-top: 10px;
+  /* margin: 0 -10px; */
+}
+
+.banner-v6 .ebg-btn-box {
+  padding-top: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+
+  body .ebg-btn-box .ebg-btn-bg-red-l,
+  body .ebg-btn-box-block .ebg-btn-bg-red-l {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body .ebg-btn-box .ebg-btn-bg-red-l span,
+  body .ebg-btn-box-block .ebg-btn-bg-red-l span {
+    line-height: 1.33333333;
+    font-size: 12px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    display: inline-block;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .banner-v2 .con .cistern .text .ebg-btn-box {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner-v6 .ebg-btn-box {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner-v6 .ebg-btn-box {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .banner-v6 .ebg-btn-box {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1201px) {
+
+  body .ebg-btn-box .ebg-btn-bg-red-l:hover,
+  body .ebg-btn-box-block .ebg-btn-bg-red-l:hover {
+    border-color: #b60005;
+    background-color: #b60005;
+    /* color: #fff; */
+  }
+}
+
+
+
+/* sidebar */
+.sidebar {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  z-index: 999;
+}
+
+.sidebar .top {
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 2px;
+  width: 42px;
+  height: 42px;
+  /* width: 116px; */
+  /* height: 42px; */
+  /* border-radius: 16px; */
+  cursor: pointer;
+  /* box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1); */
+  /* -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1); */
+  /* margin-top: 10px; */
+  background: #fff url(https://e.huawei.com/topic/sitecore/industrial-digital-transformation-2021/img/sidebar/top-img1.png) no-repeat center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar .top:hover {
+  background-image: url(https://e.huawei.com/topic/sitecore/industrial-digital-transformation-2021/img/sidebar/top-img2.png);
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    bottom: 50px;
+  }
+
+  .sidebar .top {
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+  }
+}
+
+
+
+/* .sidebar .top {
+  width: 116px;
+  height: 42px;
+  border-radius: 16px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px 0px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 10px 0px rgb(0 0 0 / 10%);
+  margin-top: 10px;
+  background: #fff url(https://e.huawei.com/topic/sitecore/industrial-digital-transformation-2021/img/sidebar/top-img1.png) no-repeat center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+} */
+
+
+
+/* speakers-wap */
+.speakers-v6 .speakers-box-wap {
+  overflow: hidden;
+}
+
+/* .speakers-v6 .swiper-wap .li {
+  width: 80%;
+} */
+
+.speakers-v6 .swiper-wap .box {
+  /* width: 100% !important; */
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  background-color: #e5e5e5;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  /* position: relative; */
+  /* height: 150px; */
+}
+
+.speakers-v6 .swiper-wap .pic {
+  width: 34%;
+  height: 100%;
+  padding: 7px 5px 0;
+  display: flex;
+  align-items: flex-end;
+  background: url(../img/speakers/bg.png) no-repeat center bottom;
+
+}
+
+.speakers-v6 .swiper-wap .pic img {
+  width: 100%;
+  display: block;
+}
+
+.speakers-v6 .swiper-wap .con {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.speakers-v6 .swiper-wap .con .name {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.speakers-v6 .swiper-wap .con .title {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+
+.speakers-v6 .pagination-ul {
+  text-align: center;
+}
+
+.speakers-v6 .pagination-ul .swiper-pagination-bullet {
+  width: 20px;
+  height: 3px;
+  background-color: #cacaca;
+  border-radius: 2px;
+  margin: 0 5px;
+  opacity: 1;
+}
+
+.speakers-v6 .pagination-ul .swiper-pagination-bullet-active {
+  background-color: #c7000b;
+}

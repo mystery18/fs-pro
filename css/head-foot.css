@@ -1,0 +1,507 @@
+.header {
+  width: 100%;
+  padding: 13px 30px;
+  position: fixed;
+  left: 0;
+  top: 0px;
+  background: transparent;
+  z-index: 1000;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.header .wrapper {
+  padding: 0;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .header {
+    z-index: 1000;
+    padding: 10px 10px;
+    background: #fff;
+    border-bottom: 1px solid #e2e2e2;
+  }
+}
+.header .wap_navbtn {
+  float: right;
+  width: 25px;
+  height: 29px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+  margin-left: 20px;
+}
+.header .wap_navbtn span {
+  background-color: #000;
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  top: 14px;
+  right: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.header .wap_navbtn span:before,
+.header .wap_navbtn span:after {
+  content: '';
+  display: block;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.header .wap_navbtn span:before {
+  top: 8px;
+}
+.header .wap_navbtn span:after {
+  top: -8px;
+}
+@media (min-width: 1000px) {
+  .header .wap_navbtn {
+    display: none;
+  }
+}
+.header .close span:after {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 0;
+}
+.header .close span::before {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0;
+}
+.header .logo {
+  float: left;
+  width: 152px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  .header .logo {
+    margin: 5px 5px;
+    max-width: 100px;
+  }
+}
+.header .logo img {
+  display: block;
+  width: 127px;
+}
+@media (max-width: 1200px) {
+  .header .logo img {
+    width: 100%;
+  }
+}
+.header .head_link {
+  float: right;
+  color: #000;
+  font-size: 16px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+.header .head_link .symbol {
+  margin-right: 10px;
+}
+.header .head_link .btn-back-01 {
+  border: none;
+}
+.header .head_link .btn-back {
+  background: #be121e;
+  background-size: cover;
+  border: none;
+  color: white;
+  font-size: 12px;
+}
+/* @media (max-width: 1000px) {
+  .header .head_link {
+    display: none;
+  }
+} */
+.header .head_link a {
+  color: #000;
+  font-size: 16px;
+  margin-left: 10px;
+  /* line-height: 30px; */
+  height: 30px;
+  padding: 5px 15px;
+  border-radius: 2px;
+  /* border: solid 1px #000; */
+  display: inline-block;
+}
+.header .head_link a:hover {
+  color: #c7000b;
+}
+.header .head_link .btn-back:hover {
+  color: white;
+}
+.header #pc-nav {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  padding-right: 40px;
+  overflow: hidden;
+  padding-top: 1px;
+}
+@media (max-width: 1000px) {
+  .header #pc-nav {
+    display: none;
+  }
+}
+.header #pc-nav ul {
+  text-align: right;
+  /* text-align: center; */
+}
+.header #pc-nav ul li {
+  padding: 5px 20px;
+  display: inline-block;
+}
+.header #pc-nav ul li a {
+  color: black;
+}
+.header #pc-nav ul li:hover a {
+  color: #c7000b;
+}
+.header #pc-nav ul .current a {
+  color: #c7000b;
+}
+.header .back-btn {
+  float: right;
+  color: #000;
+  margin: 25px 30px;
+}
+@media (max-width: 1200px) {
+  .header .back-btn {
+    margin: 10px 10px;
+  }
+}
+.header .back-btn .home,
+.header .back-btn .language {
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+@media (max-width: 1200px) {
+  .header .back-btn .home,
+  .header .back-btn .language {
+    font-size: 14px;
+  }
+}
+.header .back-btn .home:hover,
+.header .back-btn .language:hover {
+  color: #c7000b;
+}
+.menue-wrap {
+  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding-top: 76px;
+  z-index: 999;
+}
+.menue-wrap li {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px 0;
+}
+.menue-wrap li a {
+  color: black;
+}
+.menue-wrap .active a {
+  color: #c7000b;
+}
+.menue-wrap .btm_btn {
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #f0f0f0;
+  padding: 10px 0;
+  bottom: 0;
+  text-align: center;
+}
+.menue-wrap .btm_btn a {
+  color: #666;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menue-wrap .btm_btn .btn {
+  background: #be121e;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.footer {
+  background: #f5f5f5;
+  font-size: 14px;
+  line-height: 1.375;
+}
+.footer .cistern {
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .footer .cistern {
+    text-align: center;
+  }
+}
+.footer .cistern .left {
+  display: inline-block;
+  float: left;
+  padding-top: 5px;
+}
+@media (max-width: 768px) {
+  .footer .cistern .left {
+    float: none;
+  }
+}
+.footer .cistern .left > p {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .footer .cistern .left > p {
+    padding-right: 0;
+    display: block;
+    text-align: center;
+  }
+}
+.footer .cistern .left .share-footer {
+  vertical-align: middle;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .footer .cistern .left .share-footer {
+    margin-top: 5px;
+  }
+}
+.footer .cistern .left .share-footer a {
+  color: #666;
+  border: 1px solid #666;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+}
+.LANG-cn .footer .cistern .left .share-footer a {
+  border: none;
+}
+.footer .cistern .left .share-footer a::before {
+  display: none;
+}
+.footer .cistern .left .share-footer a .iconfont {
+  font-size: 24px;
+  left: 1px;
+  top: -2px;
+  position: absolute;
+}
+.footer .cistern .left .share-footer a .pic {
+  display: none;
+  width: 120px;
+  /* width: 60px; */
+  /* height: 60px; */
+  height: 120px;
+  position: absolute;
+  left: -15px;
+  bottom: 36px;
+}
+.footer .cistern .left .share-footer a .pic img {
+  width: 100%;
+  display: block;
+}
+.footer .cistern .left .share-footer a:hover .pic {
+  display: block;
+}
+.footer .cistern .right {
+  text-align: right;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .footer .cistern .right {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.footer .cistern .right .contact a {
+  color: #333;
+}
+.footer .cistern .right > span {
+  color: #666;
+}
+.register-to-get {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+@media (max-width: 1200px) {
+  .register-to-get {
+    position: static;
+    background: #ebf8ff url(../images/registerToGet-bg1.jpg) no-repeat right;
+  }
+}
+.register-to-get .avatar {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.13);
+  border-radius: 100%;
+}
+@media (max-width: 1200px) {
+  .register-to-get .avatar {
+    display: none;
+  }
+}
+.register-to-get .avatar img {
+  width: 100%;
+  display: block;
+}
+.register-to-get .text {
+  width: 390px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background-size: cover;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+          transform-origin: right bottom;
+  opacity: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+@media (max-width: 1200px) {
+  .register-to-get .text {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+    display: block;
+    border-radius: 0;
+    position: initial;
+    width: 65%;
+    height: auto;
+    padding: 25px 0;
+  }
+}
+.register-to-get .text.animate {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  opacity: 1;
+}
+.register-to-get .text .box-shadow {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.13);
+  margin-right: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .register-to-get .text .box-shadow {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-right: 0;
+  }
+}
+.register-to-get .text h3 {
+  font-size: 14px;
+  line-height: 1.3;
+  background: #fff;
+  color: #3f3a39;
+  padding: 15px 25px 0;
+}
+@media (max-width: 1200px) {
+  .register-to-get .text h3 {
+    background: none;
+  }
+}
+.LANG-cn .register-to-get .text h3 {
+  line-height: 1.5;
+}
+.register-to-get .text .btn {
+  background: #fff;
+  padding: 10px 25px 15px;
+}
+@media (max-width: 1200px) {
+  .register-to-get .text .btn {
+    background: none;
+  }
+}
+.register-to-get .text a {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+}
+.register-to-get .text a:nth-child(1) {
+  margin-right: 40px;
+}
+.register-to-get .text a p {
+  font-size: 12px;
+  padding: 0 30px 0 0;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  color: #c7000b;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .register-to-get .text a p:after {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    content: "";
+    background: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+@media (max-width: 768px) {
+  .register-to-get .text a p {
+    font-size: 14px;
+  }
+}
+.register-to-get .text a span {
+  position: absolute;
+  right: 13px;
+  top: 3px;
+  z-index: 1;
+  color: #c7000b;
+  font-size: 12px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+@media (min-width: 1200px) {
+  .register-to-get .text a:hover span {
+    right: 8px;
+  }
+  .register-to-get .text a:hover p:after {
+    background: #c7000b;
+  }
+}
